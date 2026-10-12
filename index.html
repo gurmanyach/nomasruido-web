@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NoMasRuido · Acústica profesional y consultoría</title>
+<meta name="description" content="NoMasRuido: acústica profesional, consultoría e ingeniería acústica, y proyectos de telecomunicaciones.">
+<style>
+  :root { --fondo:#f6f7f9; --texto:#1c2430; --suave:#586274; --acento:#1b5e9b; --acento-texto:#ffffff;
+          --tarjeta:#ffffff; --borde:#dfe3ea; --portada:#e8f0f8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#12161c; --texto:#e8ecf2; --suave:#9aa5b8; --acento:#6fb1ea; --acento-texto:#0d1117;
+            --tarjeta:#1a2029; --borde:#2a3340; --portada:#17202b; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin:0; background:var(--fondo); color:var(--texto);
+         font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  a { color:var(--acento); }
+  .contenedor { max-width:60rem; margin:0 auto; padding:0 1rem; }
+
+  header.nav { border-bottom:1px solid var(--borde); background:var(--tarjeta); position:sticky; top:0; z-index:5; }
+  header.nav .contenedor { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding-top:.75rem; padding-bottom:.75rem; flex-wrap:wrap; }
+  .marca { font-weight:700; letter-spacing:-.01em; text-decoration:none; color:var(--texto); font-size:1.1rem; }
+  nav a { margin-left:1.1rem; text-decoration:none; font-size:.95rem; }
+
+  .portada { background:var(--portada); border-bottom:1px solid var(--borde); padding:4.5rem 0 4rem; }
+  .portada h1 { font-size:clamp(2.1rem,6vw,3.4rem); margin:0 0 .5rem; letter-spacing:-.02em; line-height:1.1; }
+  .portada p { color:var(--suave); font-size:1.2rem; max-width:38rem; margin:0 0 1.75rem; }
+  .boton { display:inline-block; background:var(--acento); color:var(--acento-texto); padding:.7rem 1.3rem;
+           border-radius:8px; text-decoration:none; font-weight:600; }
+
+  section.bloque { padding:3rem 0 1rem; }
+  h2 { font-size:1.6rem; margin:0 0 1.25rem; letter-spacing:-.01em; }
+  .rejilla { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); }
+  .tarjeta { background:var(--tarjeta); border:1px solid var(--borde); border-radius:12px; padding:1.25rem 1.4rem; }
+  .tarjeta h3 { margin:0 0 .4rem; font-size:1.1rem; color:var(--acento); }
+  .tarjeta p { margin:0; color:var(--suave); font-size:.97rem; }
+  ul.enlaces { list-style:none; margin:0; padding:0; display:grid; gap:.6rem; }
+  ul.enlaces li { background:var(--tarjeta); border:1px solid var(--borde); border-radius:10px; padding:.8rem 1.1rem; }
+  ul.enlaces span { display:block; color:var(--suave); font-size:.9rem; }
+  footer { margin-top:3rem; border-top:1px solid var(--borde); padding:1.5rem 0 2.5rem; color:var(--suave); font-size:.9rem; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="contenedor">
+    <a class="marca" href="#inicio">NoMasRuido</a>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#enlaces">Enlaces</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="portada" id="inicio">
+    <div class="contenedor">
+      <h1>NoMasRuido</h1>
+      <p>Acústica profesional, consultoría e ingeniería acústica, y proyectos de telecomunicaciones.</p>
+      <a class="boton" href="#contacto">Contactar</a>
+    </div>
+  </div>
+
+  <section class="bloque" id="servicios">
+    <div class="contenedor">
+      <h2>Carta de servicios</h2>
+      <div class="rejilla">
+        <div class="tarjeta">
+          <h3>Acústica de edificación</h3>
+          <p>Estudios de aislamiento acústico y de acondicionamiento de recintos, conforme al Código Técnico de la Edificación y a la normativa autonómica aplicable.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Mediciones acústicas</h3>
+          <p>Mediciones en obra y en recintos existentes para comprobar el aislamiento y el ruido.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Consultoría y proyectos</h3>
+          <p>Estudios y memorias técnicas acústicas para actividades y obras, y asesoramiento ante la normativa y las ordenanzas municipales.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Telecomunicaciones (ICT)</h3>
+          <p>Proyectos y documentación técnica de infraestructuras comunes de telecomunicaciones en edificios.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Herramientas e I+D</h3>
+          <p>Desarrollo de herramientas de cálculo propias para el análisis acústico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque" id="enlaces">
+    <div class="contenedor">
+      <h2>Enlaces de interés</h2>
+      <ul class="enlaces">
+        <li><a href="https://www.codigotecnico.org" rel="noopener">Código Técnico de la Edificación</a><span>Documento Básico de protección frente al ruido (DB-HR).</span></li>
+        <li><a href="https://www.boe.es" rel="noopener">Boletín Oficial del Estado</a><span>Legislación estatal consolidada.</span></li>
+        <li><a href="mailto:info@nomasruido.com">info@nomasruido.com</a><span>Escríbenos y te respondemos.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="bloque" id="contacto">
+    <div class="contenedor">
+      <h2>Contacto</h2>
+      <div class="tarjeta">
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/34956371172" rel="noopener">956 371 172</a></p>
+        <p><strong>Teléfono:</strong> <a href="tel:+34675621514">675 621 514</a></p>
+        <p><strong>Correo:</strong> <a href="mailto:info@nomasruido.com">info@nomasruido.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="contenedor">NoMasRuido · Joaquín Serrat González</div>
+</footer>
+
+</body>
+</html>
